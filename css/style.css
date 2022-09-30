@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Jura:regular,700&display=swap");
+/*================================================================*/
+body {
+	font-family: "Lato";
+	background: rgb(176, 176, 171, 0.3);
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.header, .footer {
+	text-align: center;
+	padding: 50px;
+	text-transform: uppercase;
+	font-size: 36px;
+	color: white;
+	background-color: rgba(90, 90, 90, 0.342);
+}
+
+[class*="__container"]{
+	max-width: 980px;
+	margin: 0 auto;
+}
+[class*="__title"]{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+}
+
+.block1__title {
+	padding: 40px 0;	
+}
+
+.block1__text {
+	margin-bottom: 50px;
+}
+
+.block1__text p {
+	line-height: 160%;
+	color: #424551;
+}
+
+.block1__subtitle {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 25px;
+}
+.block1__list {
+	margin-bottom: 50px;
+}
+.block1__list li {
+	line-height: 160%;
+	color: #424551;
+}
+.block1__list li:not(:last-child) {
+	margin-bottom: 5px;
+}
+.block1__list li::before {
+	content: "";
+	background: url(../img/icons/Vector.svg) 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 15px;
+	}
+/*======BLOCK 2================*/
+.block2__subtitle {
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 10px;
+}
+.block2__title {
+	margin-bottom: 15px;
+}
+.block2__author {
+	font-size: 20px;
+	line-height: 150%;
+	color: #787A80;
+	margin-bottom: 30px;
+}
+.block2__info {
+	margin-bottom: 30px;
+	font-weight: 700;
+	line-height: 160%;
+	color: #424551;
+}
+
+.info li:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.info li:nth-child(1)::before{
+	content: "";
+	background: url('../img/icons/Star\ \(Stroke\).svg') 0 0 no-repeat;
+	height: 16px;
+	width: 15px;
+	display: inline-block;
+	margin-right: 9px;
+}
+.info li:nth-child(2)::before{
+	content: "";
+	background: url('../img/icons/Vector\(1\).svg') 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 9px;
+}
+.info li:nth-child(3)::before{
+	content: "";
+	background: url('../img/icons/Vector\(2\).svg') 0 0 no-repeat;
+	height: 14px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 9px;
+}
+
+.block2__text {
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 50px;
+}
+
+/*==============Block 3=====================*/
+
+.block3 {
+	font-family: "Jura";
+}
+.block3__content {
+	padding: 20px 10px;
+	background: rgba(243, 243, 243, 0.726);
+	max-width: 720px;
+	margin: 0 auto;
+	border-radius: 15px;
+	margin-bottom: 50px;
+}
+.block3__content:hover {
+	box-shadow: 0px 0px 75px 1px rgba(33,194,100,0.35);
+	background-color: rgba(12, 121, 223, 0.342);
+	transition: all 0.8s ease 0s;
+	}
+.content__titl {
+	text-align: center;
+	font-weight: 700;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+.content__titl a {
+	padding: 0 10px;
+	color: rgb(0, 89, 255);
+	font-size: 12px;
+}
+.content__titl a:nth-child(1)::before {
+	content: "";
+	background: url(../img/icons/icon11.png) 0 0 no-repeat;
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	margin-right: 7px;
+}
+.content__titl a:nth-child(2)::before {
+	content: "";
+	background: url(../img/icons/icon22.png) 0 0 no-repeat;
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	margin-right: 7px;
+}
+
+.content__list {
+	display: none;
+	padding: 50px;
+}
+.content__list:target {
+	display: inline-block;
+}
+.link {
+	display: inline-block;
+}
+.link:target {
+	display: none;
+}
+.content__list li:not(:last-child){
+	margin-bottom: 15px;
+}
+.content__list li:hover {
+	transform: scale(1.1);
+	transition: all 0.8s ease 0.1s;
+	text-shadow: 0px 0px 20px rgba(193, 92, 25, 1);
+}
+
+.content__list li::before {
+	content: "";
+	display: inline-block;
+	margin-right: 8px;
+	background: url(../img/icons/icon33.png) 0 0 no-repeat;
+	height: 15px;
+	width: 15px;
+}
+
+/*===========Block 3=================*/
+
+.block3__info {
+	max-width: 720px;
+	margin: 0 auto;
+}
+.info {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.info__titlle {
+	text-align: center;
+	font-weight: 700;
+	font-size: 36px;
+	margin-bottom: 25px;
+}
+.info__text p:nth-child(odd){
+	color: green;
+}
+
+.info__text {
+	margin-bottom: 50px;
+}
+.info__text p:not(:last-child){
+	margin-bottom: 15px;
+}
+#text-pseudo p:nth-child(2){
+	background: rgb(7, 168, 232, 0.1);
+}
